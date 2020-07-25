@@ -2,6 +2,7 @@ const { apiEndpoint } = require('./prismic-config');
 var repo = /([^\/]+)\.prismic\.io\/graphql/.exec(apiEndpoint);
 
 module.exports = {
+  pathPrefix: '/blog',
   siteMetadata: {
     title: `Gatsby Prismic Blog`,
     description: `Blog example for Gatsby & Prismic`,
